@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Liquidacion Final</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+    <div class='icono-menu'>
+        <img src="images/menugris.png" id='icono-menu' class='burger'>
+    </div>
+    <h2 class='marca'>ESTUDIO HABERES</h2>
+    <div class='cont-menu active' id='menu'>
+       <ul>
+         <a href='#calculadora'><li>Calculadora</li></a>
+         <a href="#escala"><li>Escala Comercio</li></a>
+         <a href="#nosotros"><li>About us</li></a>
+         <a href="#contacto"><li>Contacto</li></a>
+       </ul>
+    </div>
+    <hr>
+</header>
+<main>
+    <div class='titulo-principal'>
+        <h1>Información y asesoramiento en liquidación de sueldos y administración de personal.</h1>
+    </div>
+    <div class='titulo-p'>
+        <p class='titulo' id="calculadora">Nueva calculadora de indemnizaciones y liquidación final</p>
+    </div>
+   
+<section>
+    <div class='formFlex' id="nuevo">
+        <div class='form2'id='formulario'>
+            <p class="titulo2">Ingrese sus datos</p><br>
+            <label>Fecha de ingreso: <br><br>
+                <input type="date" name="ingreso" id="ingreso" placeholder='AAAA-MM-DD'>
+            </label><br><br>
+            <label>Fecha de egreso: <br><br>
+                <input type="date" name="egreso" id="egreso" placeholder='AAAA-MM-DD'>
+            </label><br><br>
+            <label>Sueldo bruto en $: <br><br>
+                <input type="number" name="sueldo" id="sueldo">
+            </label><br><br>
+            <p class="tituloChico">Elija el tipo de liquidación</p><br>
+            <label>Renuncia
+                <input type="radio" name='tipo de liquidacion' value="Renuncia" id="renuncia">
+            </label>
+            <label>Despido
+                <input type="radio" name='tipo de liquidacion' value="Despido" id="despido"> 
+            </label><br><br>
+            <button class="btn" id='boton'>Calcular</button>
+        </div>
+    </div>
+    <div id='volverCalcular'></div>
+</section>
+<section>
+    <p class="titulo" id='escala'>Escalas Convenio Empleados de Comercio</p>
+    <div class='formFlex escala'>
+        <div>
+            <p class="tituloChico2">Maestranza</p><br>
+             <select id='maestranza' class='input-size'>
+                <option value="$70.770">Maestranza A</option>
+                <option value="$71.024">Maestranza B</option>
+                <option value="$71.999">Maestranza C</option>
+             </select><br><br>
+             <input type="text" id='resultado0' class='input-size'>
+        </div>
+        <div>
+            <p class="tituloChico2">Auxiliar</p><br>
+            <select id='auxiliar' class='input-size'>
+                <option value="$72.049">Auxiliar A</option>
+                <option value="$72.774">Auxiliar B</option>
+                <option value="$75.056">Auxiliar C</option>
+                <option value="$72.818">Auxiliar Esp A</option>
+                <option value="$74.100">Auxiliar Esp B</option>
+            </select><br><br>
+            <input type="text" id='resultado1' class='input-size'>
+        </div>
+        <div>
+            <p class="tituloChico2">Administrativo</p><br>
+            <select id='admin' class='input-size'>
+                <option value="$71.792">Administrativo A</option>
+                <option value="$72.152">Administrativo B</option>
+                <option value="$72.997">Administrativo C</option>
+                <option value="$73.593">Administrativo D</option>
+                <option value="$74.817">Administrativo E</option>
+                <option value="$76.410">Administrativo F</option>
+            </select><br><br>
+            <input type="text" id='resultado2' class='input-size'>
+        </div>
+        <div>
+            <p class="tituloChico2">Vendedor</p><br>
+            <select id='venta' class='input-size'>
+                <option value="$72.049">Vendedor A</option>
+                <option value="$74.177">Vendedor B</option>
+                <option value="$74.818">Vendedor C</option>
+                <option value="$76.410">Vendedor E</option>
+            </select><br><br>
+            <input type="text" id='resultado3' class='input-size'>
+           
+        </div>        
+    </div>
+</section>   
+<section id='nosotros'>
+    <div class='about'>
+        <h3 id='about'>Estudio Haberes</h3>
+        <p>Somos un Estudio situado en la ciudad de La Plata, Provincia de Buenos Aires, dedicado a la Liquidacion de Sueldos y Administración de Personal</p>
+    </div> 
+    <div id='mje'>
+        <div class='infoDiv'>
+            <p class='info'>Si querés recibir más información, dejanos tu email y nos pondremos en contacto</p><br>
+            <input class='email' type='text' id='nombre' placeholder="Nombre"><br><br>
+            <input class='email' type="email" id='email' placeholder="name@mail.com"><br><br>
+            <button class="btn" id='boton2'>Enviar</button>  
+        </div>
+    </div>  
+</section>
+</main>
+<footer class='footer' id='contacto'>
+    <div class='footer-flex'>
+        <a href='https://www.linkedin.com/in/natalia-reggiani-831247217/' target="blank"><img src='images/linkedin.png'></a>
+        <a href='https://www.instagram.com/natireggiani/' target="blank"><img src='images/instagram.png' class='instagramImg'></a>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="second.js"></script>
+</body>
+</html>
