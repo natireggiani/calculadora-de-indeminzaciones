@@ -17,10 +17,10 @@ $(document).ready(function(){
 
 //CALCULADORA
 
-    $('#boton').hover(()=>{
-        $('#boton').css({'background-color':'#1d3557','color':'silver'});
+    $('#boton').hover((e)=>{
+        $(e.target).css({'background-color':'#1d3557','color':'silver'});
         },()=>{
-         $('#boton').css({'background-color':'rgb(255, 245, 238)','color':'black'});
+         $(e.target).css({'background-color':'rgb(255, 245, 238)','color':'black'});
     });
 
    $('#boton').click(()=>{
